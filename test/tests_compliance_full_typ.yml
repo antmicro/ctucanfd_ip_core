@@ -1,3 +1,19 @@
+###############################################################################
+##
+## This test-case list contains all ISO16845-1 2016 tests in typical scenario
+## (typical bit-rate).
+##
+## Randomization: Yes
+## Coverage: Yes
+##
+## This test-case list is randomized and coverage is collected on it.
+##
+## Parameters:
+##   System clock: 40 MHz
+##   Nominal bit-rate: 0.5 Mbit/s (65 % sample point)
+##   Data bit-rate: 2 Mbit/s (70 % sample point)
+##
+###############################################################################
 _default: &default
 
     # Test-bench configuration
@@ -17,29 +33,30 @@ _default: &default
 
     # DUT generics
     rx_buffer_size: 64
-    txt_buffer_count: 8
-    sup_filtA: true
-    sup_filtB: true
-    sup_filtC: true
-    sup_range: true
-    sup_traffic_ctrs: true
+    txt_buffer_count: 2
+    sup_filtA: false
+    sup_filtB: false
+    sup_filtC: false
+    sup_range: false
+    sup_traffic_ctrs: false
     target_technology: 0 # C_TECH_ASIC
 
     # DUT Bit timing settings
     # Applies for compliance tests and feature tests!
-    brp: 5
-    prop: 10
-    ph_1: 10
-    ph_2: 10
+    brp: 4
+    prop: 5
+    ph_1: 7
+    ph_2: 7
     sjw: 5
+
     brp_fd: 1
     prop_fd: 5
-    ph_1_fd: 5
-    ph_2_fd: 5
-    sjw_fd: 4
+    ph_1_fd: 7
+    ph_2_fd: 7
+    sjw_fd: 5
 
     # Clock configuration
-    system_clock_period: 10 ns
+    system_clock_period: 25 ns
 
     # Not relevant for compliance tests..., ignore it
     reference_iterations: 1000
