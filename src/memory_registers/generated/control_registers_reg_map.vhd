@@ -828,7 +828,7 @@ begin
         data_width                      => 16 ,
         data_mask                       => "0000001111111111" ,
         reset_polarity                  => RESET_POLARITY ,
-        reset_value                     => "0000000000001010" ,
+        reset_value                     => "0000000100001010" ,
         auto_clear                      => "0000000000000000" ,
         is_lockable                     => true 
     )
