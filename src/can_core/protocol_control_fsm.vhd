@@ -1894,7 +1894,6 @@ begin
                 ctrl_ctr_pload_val <= C_DLC_DURATION;
                 tx_load_dlc_i <= '1';
                 err_pos <= ERC_POS_CTRL;
-                tran_delay_meas <= '1';
                 crc_enable <= '1';
                 is_control <= '1';
                 bit_err_disable_receiver <= '1';
