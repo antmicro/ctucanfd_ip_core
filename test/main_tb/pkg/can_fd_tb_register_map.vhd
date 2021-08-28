@@ -313,7 +313,7 @@ package can_fd_tb_register_map is
     (address   => SSP_CFG_ADR,
      size      => 16,
      reg_type  => reg_read_write,
-     reset_val => "00000000000010100000000000000000",
+     reset_val => "00000001000010100000000000000000",
      is_implem => "00000000000000000000000000000000"),
     (address   => RX_FR_CTR_ADR,
      size      => 32,
